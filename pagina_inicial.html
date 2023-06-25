@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minha Página Web</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilo adicional para a seta */
+    .arrow {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid black;
+      border-right: 2px solid black;
+      transform: rotate(-45deg);
+      margin-left: 5px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .arrow.down {
+      transform: rotate(135deg);
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+  
+</head>
+<body>
+  <div id="menu">
+    <a class="active" href="#home">Amazonas</a>
+    <a href="index.php">Tradutor</a>
+    <a href="#tradutor">Dicionario</a>
+    <a href="#sugestao">Sugestão</a>
+    <a href="cultura.html">Cultura</a>
+
+    <div class="dropdown">
+      <button class="dropdown-button">Terras Indígenas</button>
+      <div class="dropdown-menu">
+        <a href="#">Sem cadastro</a>
+        <a href="#">Sem cadastro</a>
+        <a href="#">Sem cadastro</a>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div id="content">
+    <header>
+      <div id="header-title">
+        <h1></h1>
+      </div>
+      <div id="header-image"></div>
+      <div id="prev-button" onclick="changeContent(-1)">&#8249;</div>
+      <div id="next-button" onclick="changeContent(1)">&#8250;</div>
+    </header>
+    
+    <section id="introduction">
+      <h2 id="option-toggle" class = "drop1" onclick="toggleOptionInfo()">
+        História e Diversidade cultural
+        <span class="arrow down"></span>
+      </h2>
+      <div id="option-info" class="hidden">
+        <div class = "drop-content">
+          <p>
+            A Amazônia abriga mais de 300 etnias indígenas,
+            com uma diversidade linguística e cultural impressionante.
+            Estima-se que a presença humana na região remonta a milhares de anos,
+            com povos indígenas que desenvolveram diferentes modos de vida,
+            como caçadores-coletores, agricultores e pescadores.
+          </p>
+        </div>
+      </div>
+
+      <h2 id="option2-toggle" class = "drop2" onclick="toggleOption2Info()">
+        Territória e Direitos
+        <span class="arrow down"></span>
+      </h2>
+      
+      <div id="option2-info" class="hidden">
+
+      <div class = "drop-content">
+        <p>
+          Existem aproximadamente 472 terras indígenas
+          demarcadas na Amazônia brasileira, totalizando 
+          uma área de cerca de 109 milhões de hectares.
+          No entanto, muitas dessas terras enfrentam ameaças,
+          como invasões ilegais, desmatamento e pressões econômicas. 
+          Os direitos indígenas são protegidos pela Constituição brasileira e 
+          por convenções internacionais, como a Convenção 169 da Organização Internacional 
+          do Trabalho (OIT).
+        </p>
+      </div>
+      </div>
+
+
+      <h2 id = "option3-toggle" class = "drop3" onclick="toggleOption3Info()">
+        Modos de vida e cosmovisão
+        <span class="arrow down"></span>
+      </h2>
+      <div id = "option3-info" class = "hidden">
+        <div class ="drop-content">
+          <p>
+            Os povos indígenas da Amazônia possuem uma 
+            rica diversidade de modos de vida, com práticas 
+            tradicionais que variam desde a pesca, agricultura, caça, 
+            coleta de recursos naturais até a produção de artesanato e a 
+            realização de rituais e cerimônias que celebram a conexão com a natureza e os ancestrais.
+          </p>
+        </div>
+      </div>
+
+
+      <h2 id="indigenous-toggle" class= "drop4" onclick="toggleIndigenousInfo()">
+          Conexão com a natureza e sustentabilidade
+        <span class="arrow down"></span>
+      </h2>
+      <div id="indigenous-info" class="hidden">
+        <div class="drop-content">
+          <p>
+            Os povos indígenas têm um profundo conhecimento 
+            da floresta amazônica e sua utilização sustentável. 
+            Estima-se que 80% da biodiversidade mundial esteja 
+            contida nas terras indígenas, evidenciando a importância 
+            desses povos na conservação ambiental.
+          </p>
+        </div>
+             
+      </div>
+
+      <h2 id="drop5-toggle" class = "drop5" onclick ="toggleDrop5Info()">
+      Desafio contenporâneos
+      <span class="arrow down"></span>
+      </h2>
+      <div id = "drop5-info" class = "hidden">
+        <div class = "drop-content">
+          <p>
+            Os povos indígenas da Amazônia enfrentam 
+            uma série de desafios, como a invasão de suas 
+            terras por atividades ilegais, o desmatamento 
+            decorrente da exploração madeireira e agropecuária, 
+            os conflitos com garimpeiros, além de questões relacionadas 
+            à saúde, educação e infraestrutura precária.
+          </p>
+        </div>
+      </div>
+
+      <h2 id="drop6-toggle" class = "drop6" onclick ="toggleDrop6Info()">
+        Resistência e ativismo
+        <span class="arrow down"></span>
+        </h2>
+        <div id = "drop6-info" class = "hidden">
+          <div class="drop-content">
+            <p>
+              Os povos indígenas da Amazônia 
+              têm se mobilizado e lutado pela proteção de seus territórios
+              , direitos e culturas. Eles desempenham um papel ativo na defesa 
+              da floresta amazônica, atuando como guardiões do meio ambiente e 
+              participando de movimentos e organizações indígenas que buscam fortalecer 
+              sua voz e influência nas decisões que afetam suas vidas.
+            </p>
+          </div>
+        </div>
+
+        <h2 id="drop7-toggle" class = "drop7" onclick ="toggleDrop7Info()">
+          Politicas publicas e colaboração
+          <span class="arrow down"></span>
+          </h2>
+          <div id = "drop7-info" class = "hidden">
+            <div class="drop-content">
+              <p>
+                O papel dos povos indígenas nas políticas públicas e inovações é fundamental para garantir a participação efetiva e o respeito aos seus direitos, conhecimentos e modos de vida. Aqui estão alguns pontos importantes sobre o papel dos indígenas nessas áreas:
+                <br>
+                <br>1. Participação ativa: Os povos indígenas têm o direito de serem consultados e envolvidos nas decisões que afetam suas vidas e territórios. Sua participação ativa é essencial para a formulação, implementação e avaliação de políticas públicas que os impactam. Isso pode incluir a criação de espaços de diálogo e consultas, onde suas vozes são ouvidas e suas opiniões consideradas.
+                <br>
+                <br>2. Preservação de conhecimentos tradicionais: Os indígenas têm um vasto conhecimento tradicional sobre a natureza, sustentabilidade, medicina, agricultura, entre outros aspectos. Esse conhecimento pode contribuir para o desenvolvimento de políticas e inovações que promovam a conservação ambiental, a adaptação às mudanças climáticas e a busca por soluções sustentáveis.
+                <br>
+                <br>3. Proteção de territórios e recursos naturais: Os povos indígenas são guardiões de territórios que abrigam uma rica diversidade biológica e cultural. Seus conhecimentos e práticas de manejo sustentável dos recursos naturais são essenciais para a conservação desses ecossistemas e para a promoção de práticas inovadoras de desenvolvimento sustentável.
+                <br>
+                <br>4. Valorização da cultura e identidade: As políticas públicas devem reconhecer e valorizar a cultura, a língua, a identidade e as práticas tradicionais dos povos indígenas. Ao fazer isso, é possível promover a inclusão social, o respeito à diversidade e a revitalização cultural.
+                <br>
+                <br>5. Inovações baseadas no conhecimento indígena: Os povos indígenas têm contribuído com inovações sustentáveis em diferentes áreas, como agricultura, tecnologias adaptadas ao ambiente, medicina tradicional, gestão de recursos naturais, entre outras. A integração dessas inovações no desenvolvimento de políticas públicas pode levar a soluções mais efetivas e contextualizadas.
+                <br>
+                <br>É essencial reconhecer a importância do papel dos indígenas nas políticas públicas e inovações, respeitando sua autonomia, conhecimentos e direitos, e estabelecendo parcerias baseadas no diálogo, na igualdade e no respeito mútuo. Isso promove uma abordagem mais inclusiva, justa e sustentável na formulação e implementação de políticas públicas.
+              </p>
+            </div>
+          </div>
+
+    </section>
+
+    <!-- Restante do seu conteúdo aqui -->
+
+  </div>
+
+<script>
+  
+  const images = [
+    'img/IndigenasSatere.png',
+    'img/menino.png',
+    'img/satere_mawe_5.jpg'
+  ];
+
+  const titles = [
+    'Descobrindo a Língua e Cultura Sateré-Mawé: Aprenda e Explore o Idioma Indígena da Amazônia',
+    'Unidos na defesa dos povos indígenas: por justiça, igualdade e sustentabilidade',
+    'Preservar as culturas indígenas é honrar nossa própria história e identidade'
+  ];
+
+  let currentIndex = 0;
+  const imageElement = document.getElementById('header-image');
+  const titleElement = document.querySelector('#header-title h1');
+
+  function changeContent(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) {
+      currentIndex = images.length - 1;
+    } else if (currentIndex >= images.length) {
+      currentIndex = 0;
+    }
+    imageElement.style.backgroundImage = `url('${images[currentIndex]}')`;
+    titleElement.textContent = titles[currentIndex];
+  }
+
+  // Chamar changeContent(0) para exibir a primeira imagem e título inicialmente
+  changeContent(0);
+
+  function toggleIndigenousInfo() {
+    const indigenousInfo = document.getElementById('indigenous-info');
+    const arrow = document.querySelector('#indigenous-toggle .arrow');
+    indigenousInfo.classList.toggle('hidden');
+    arrow.classList.toggle('down');
+  }
+</script>
+
+<script>
+  function toggleOptionInfo() {
+    const optionInfo = document.getElementById('option-info');
+    const arrow = document.querySelector('#option-toggle .arrow');
+    optionInfo.classList.toggle('hidden');
+    arrow.classList.toggle('down');
+  }
+</script>
+
+<script>
+  function toggleOption2Info() {
+    const option2Info = document.getElementById('option2-info');
+    const arrow = document.querySelector('#option2-toggle .arrow');
+    option2Info.classList.toggle('hidden');
+    arrow.classList.toggle('down');
+  }
+</script>
+
+<script>
+  function toggleOption3Info(){
+    const option3Info = document.getElementById('option3-info');
+    const arrow = document.querySelector('#option3-toggle .arrow');
+    option3Info.classList.toggle('hidden');
+    arrow.classList.toggle('down');
+  }
+</script>
+
+<script>
+  function toggleDrop5Info(){
+    const drop5Info = document.getElementById('drop5-info');
+    const arrow = document.querySelector('#drop5-toggle .arrow');
+    drop5Info.classList.toggle('hidden');
+    arrow.classList.toggle('down');
+  }
+</script>
+
+<script>
+  function toggleDrop6Info(){
+    const drop6Info = document.getElementById('drop6-info');
+    const arrow = document.querySelector('#drop6-toggle .arrow');
+    drop6Info.classList.toggle('hidden');
+    arrow.classList.toggle('down');
+  }
+</script>
+
+<script>
+  function toggleDrop7Info(){
+    const drop7Info = document.getElementById('drop7-info');
+    const arrow = document.querySelector('#drop7-toggle .arrow');
+    drop7Info.classList.toggle('hidden');
+    arrow.classList.toggle('down');
+  }
+</script>
+
+<script>
+// Opcional: fechar o menu suspenso quando clicar fora dele
+document.addEventListener("click", function(event) {
+  var dropdowns = document.getElementsByClassName("dropdown");
+  for (var i = 0; i < dropdowns.length; i++) {
+    var dropdown = dropdowns[i];
+    if (!dropdown.contains(event.target)) {
+      var dropdownMenu = dropdown.querySelector(".dropdown-menu");
+      dropdownMenu.style.display = "none";
+    }
+  }
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+/* Pagina Inicial */
+body {
+  background-color: #fffbfb;
+}
+
+#menu {
+  background-color: #ff000098;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+}
+
+#tradu {
+  background-color: #32f53b;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+}
+
+#tradu a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#tradu a:hover {
+  background-color: #0f0e0e;
+}
+
+#tradu a.active {
+  background-color: #132013;
+  color: #fff;
+}
+
+
+#menu a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#menu a:hover {
+  background-color: #0f0e0e;
+}
+
+#menu a.active {
+  background-color: #132013;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.drop1 {
+  color: rgb(48, 46, 46);
+  margin-left: 25px;
+}
+.drop2 {
+  color: rgb(48, 46, 46);
+  margin-left: 25px;
+}
+.drop3 {
+  color: rgb(48, 46, 46);
+  margin-left: 25px;
+}
+.drop4 {
+  color: rgb(48, 46, 46);
+  margin-left: 25px;
+}
+
+.drop5{
+  color: rgb(48, 46, 46);
+  margin-left: 25px;
+}
+
+.drop6{
+  color: rgb(48, 46, 46);
+  margin-left: 25px;
+}
+.drop7{
+  color: rgb(48, 46, 46);
+  margin-left: 25px;
+}
+
+
+.drop1,
+.drop2,
+.drop3,
+.drop4,
+.drop5,
+.drop6,
+.drop7 {
+  border-bottom: 1px solid #f30707;
+  padding-bottom: 10px; /* Adicione espaço abaixo da linha */
+  max-width: 50%;
+}
+
+/*dropDown, modifica os textos dos drops*/
+.drop-content{
+  width: 100%;
+  max-width: 600px;
+  margin-left: 40px;
+}
+
+/*Menu Suspenso*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #8b85857c;
+  min-width: 120px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-menu a:hover {
+  background-color: #070707;
+}
+/**/
+
+/*modificar button de menu suspenso*/
+.dropdown-button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 14px;
+  text-decoration: none;
+  position: relative;
+}
+
+.dropdown-button:before {
+  content: "";
+  position: absolute;
+  left: 5;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown-button:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.dropdown-button:focus {
+  outline: none;
+}
+
+
+
+#search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #042b0f;
+  padding: 5px;
+}
+
+#search-bar input[type="text"] {
+  width: 500px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#search-bar button {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#content {
+  margin-top: 50px; /* Adicionado para afastar o conteúdo do menu */
+}
+
+header {
+  position: relative;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#header-title h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgb(18, 19, 18);
+  z-index: 1;
+  width: 80%;
+}
+
+
+#prev-button,
+#next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(163, 15, 15, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#prev-button {
+  left: 10px;
+}
+
+#next-button {
+  right: 10px;
+}
+
+#result-container {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #fff;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+#result-container p {
+  margin: 10px 0;
+}
+
+header {
+  height: 75vh;
+}
+
+#header-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 1500px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}

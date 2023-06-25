@@ -1,0 +1,1 @@
+SELECT * FROM `appInd`.`dicionario` LIMIT 1000;
