@@ -5,7 +5,6 @@ include("conexao.php");
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Minha Página Web</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <style>
     body {
@@ -53,7 +52,6 @@ include("conexao.php");
   <div id="tradu" class="styles">
     <a href="pagina_inicial.html">Início</a>
     <a href="Dicionario.html">Dicionário</a>
-    <a href="#gramatica">Gramática</a>
     <a href="cultura.html">Cultura</a>
   </div>
 
